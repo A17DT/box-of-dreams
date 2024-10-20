@@ -1,0 +1,21 @@
+while True:
+    n= int(input("Enter a no. to check: " ))
+    # perfect
+    sum=0
+    for i in range(1,n):
+        if n%i==0:
+            sum=sum+i
+    if sum==n:
+        print("This is a perfect number.")
+    # palindrome
+    y=0
+    pal=n
+    while pal>0:
+        d=pal%10
+        y=y*10+d
+        pal//=10
+    if y==n:
+        print("This is a palindrome number")
+    else:
+        print("The entered no. is neither a palindrome, nor a perfect number")
+    print()

@@ -1,0 +1,13 @@
+while True:
+    n=int(input("Enter a number to check:" ))
+    f=0
+    for i in range (2,n):
+        if n%i==0:
+            f=1
+    if n==0 or n==1:
+        print(n," is not a prime number or composite number")
+    elif f==0:
+        print(n," is a prime number")
+    else:
+        print(n," is a composite number")
+    print()

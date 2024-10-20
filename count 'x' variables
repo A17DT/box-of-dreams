@@ -1,0 +1,20 @@
+while True:
+    z=(input("Enter your text: "))
+    v=0
+    c=0
+    u=0
+    l=0
+    for x in z:
+        if x.isalpha():
+            if x in "aeiouAEIOU":
+                v += 1
+            else:
+                c += 1
+            if x.isupper():
+                u += 1
+            elif x.islower():
+                l += 1
+    print("No. of vowels is =", v)
+    print("No. of consonants is =", c)
+    print("No. of uppercase letters is =", u)
+    print("No. of lowercase letters is =", l)

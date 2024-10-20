@@ -1,0 +1,22 @@
+while True:
+    a=int(input('enter no of rows: '))
+    if a>2:
+        b=input('enter desired symbol: ')
+        d=int(a/2)
+        e=round(a/2)
+        for x in range(d):
+            f=" "*(d-x)
+            if x==0:
+                print(f+b)
+            else:
+                print(f+b+' '*(2*x-1)+b)
+        for x in range (d,-1,-1):
+            g=' '*(d-x)
+            if x==0:
+                print(g+b)
+            else: 
+                print(g+b+' '*(2*x-1)+b)
+                
+    else:
+        print('ATLEAST 3 ROWS REQUIRED TO PRINT A HOLLOW DIAMOND')
+    print()

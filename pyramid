@@ -1,0 +1,9 @@
+while True or False:
+    a= int(input('enter no. of rows: '))
+    b= input('enter desired symbol: ')
+    c= 1
+    for x in range(a):
+        print(' '*a,end='')
+        print((b+' ')*c)
+        a-=1
+        c+=1

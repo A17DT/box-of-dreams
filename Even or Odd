@@ -1,0 +1,9 @@
+while True:
+    x =int(input('Enter a number: '))
+    try:
+        if x % 2 == 0: 
+            print(x," is an even number.") 
+        else:
+            print(x, " is an odd number.")
+    except ValueError:
+        print('Enter an integer')
